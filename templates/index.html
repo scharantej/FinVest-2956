@@ -1,0 +1,39 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Financial Planning App</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="container">
+<h1>Financial Planning App</h1>
+<p>
+This app will help you create a financial plan to reach your savings goals. Please enter
+your financial information below.
+</p>
+<form action="/results" method="post">
+<div class="form-group">
+<label for="income">Income:</label>
+<input type="number" class="form-control" id="income" name="income" />
+</div>
+<div class="form-group">
+<label for="expenses">Expenses:</label>
+<input type="number" class="form-control" id="expenses" name="expenses" />
+</div>
+<div class="form-group">
+<label for="savings_goal">Savings Goal:</label>
+<input type="number" class="form-control" id="savings_goal" name="savings_goal" />
+</div>
+<button type="submit" class="btn btn-primary">Generate Plan</button>
+</form>
+</div>
+</body>
+</html>
+
+
+
