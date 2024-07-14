@@ -1,0 +1,35 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Financial Planning App</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="container">
+<h1>Financial Planning App</h1>
+<h2>Financial Plan</h2>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>Savings Rate: {{ plan.savings_rate }}</li>
+<li>Investment Return: {{ plan.investment_return }}</li>
+<li>Years to Goal: {{ plan.years_to_goal }}</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ol>
+{% for recommendation in plan.recommendations %}
+<li>{{ recommendation }}</li>
+{% endfor %}
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>
+
